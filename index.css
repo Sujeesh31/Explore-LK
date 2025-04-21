@@ -1,3 +1,79 @@
+/* Mobile adjustments for smaller screens */
+@media (max-width: 480px) {
+
+    header {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .flag,
+    .logo {
+        width: 90px;
+        top: 10px;
+        transform: none;
+    }
+
+    .shadow-text {
+        font-size: 50px;
+        top: 30%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #intro {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .explore-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .gallery img {
+        height: 160px;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+/* Tablet or medium screen enhancements */
+@media (max-width: 768px) {
+    .flag,
+    .logo {
+        width: 120px;
+    }
+
+    .shadow-text {
+        font-size: 80px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+
+
+
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
