@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Explore Map LK</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <a href="index.html" class="home-icon-button">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <style>
+        #map-frame {
+            height: 580px;
+            width: 1300px;
+            background-color: gray;
+            border: 4px solid black;
+            margin-left: 50px;
+        }
+
+        body {
+            background-image: url('./images/photo.jpg');
+            /* Replace with your image filename */
+            background-size: cover;
+            /* Ensures the image covers the whole page */
+            background-position: center;
+            /* Centers the image */
+            background-repeat: no-repeat;
+            /* Prevents the image from repeating */
+            background-attachment: fixed;
+            /* Keeps the background fixed while scrolling */
+        }
+
+        h1 {
+            text-align: center;
+            /* Centers the heading */
+            font-size: 36px;
+            /* Increases font size */
+            font-weight: bold;
+            /* Makes text bold */
+            position: relative;
+            animation: bounceTitle 2s ease-in-out infinite;
+        }
+
+        h1 i {
+            color: #020202;
+            /* Make the quote part standout */
+        }
+
+
+        /* Animation for title bouncing */
+        @keyframes bounceTitle {
+            0% {
+                transform: translateY(0);
+            }
+
+            25% {
+                transform: translateY(-10px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            75% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1><b>Explore Sri Lanka <i>"The Wonder of Asia"</i></b></h1>
+
+    <!-- Dropdown Filter -->
+    <div id="filters-container">
+        <div class="filter-box">
+            <label for="category-filter" style="font-size: 18px;"><strong>Filter by Category:</strong></label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="Historical Places">Historical Places</option>
+                <option value="International Cricket Stadiums">International Cricket Stadiums</option>
+                <option value="Temples">Temples</option>
+                <option value="Beaches">Beaches</option>
+                <option value="Natural Beauty">Natural Beauty</option>
+                <option value="Outdoor Attractions">Outdoor Attractions</option>
+                <option value="Beach Resorts">Beach Resorts</option>
+
+            </select>
+        </div>
+
+        <div class="filter-box">
+            <label for="province-filter" style="font-size: 18px;"><strong>Filter by Province:</strong></label>
+            <select id="province-filter">
+                <option value="all">All Provinces</option>
+                <option value="Western">Western Province</option>
+                <option value="Central">Central Province</option>
+                <option value="Southern">Southern Province</option>
+                <option value="Uva">Uva Province</option>
+                <option value="Sabaragamuwa">Sabaragamuwa Province</option>
+                <option value="Eastern">Eastern Province</option>
+                <option value="North Western">North Western Province</option>
+                <option value="North Central">North Central Province</option>
+                <option value="Northern">Northern Province</option>
+            </select>
+        </div>
+    </div>
+
+
+    <!-- Route Planning -->
+    <div id="route-controls">
+        <label style="font-size: 17px;"><b>Start:</b></label>
+        <select id="start-location"></select>
+        <label style="font-size: 17px;"><b>Destination:</b></label>
+        <select id="end-location"></select>
+        <button id="route-btn">Get Journey</button>
+        <p id="travel-time"></p>
+        <div id="route-info"></div>
+    </div>
+
+    <div id="map-frame"></div>
+
+
+    <div id="rating-container">
+        <h2>⭐ Rate Locations</h2>
+        <p><strong>Selected Location:</strong> <span id="selected-location">Click on a location</span></p>
+
+        <!-- Star Rating System -->
+        <div class="star-rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDlGKi_Oib6zG07jRNtonHo5x_Zd5IBHI&callback=mapframe&loading=async"
+            type="text/javascript"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>

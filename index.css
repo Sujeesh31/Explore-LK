@@ -1,0 +1,328 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+
+/* Header Styling */
+header {
+    background: rgba(41, 139, 97, 0.993);
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    animation: slideIn 1s ease-out;
+
+    /* Add this for the rounded bottom corners */
+    border-bottom-left-radius: 25px;
+    /* Adjust the curve size as needed */
+    border-bottom-right-radius: 25px;
+    /* Adjust the curve size as needed */
+}
+
+/* Animated Header Effect */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* Wrapper for Centering */
+.title-wrapper {
+    position: relative;
+    /* This keeps everything inside aligned */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Shadow Text - "Ayubowan" */
+.shadow-text {
+    position: absolute;
+    top: 50%;
+    /* Centers it */
+    left: 50%;
+    /* Aligns it with the main title */
+    transform: translate(-50%, -50%);
+    /* Ensures perfect center alignment */
+    font-size: 120px;
+    /* Large enough for a shadow effect */
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    color: rgba(0, 0, 0, 0.10);
+    /* Soft shadow effect */
+    white-space: nowrap;
+    /* Prevents line breaks */
+    pointer-events: none;
+    /* Prevents interaction */
+    user-select: none;
+    /* Cannot be selected */
+    z-index: 0;
+    /* Ensures it is behind the main text */
+}
+
+/* Main Header Title */
+h1 {
+    position: relative;
+    z-index: 1;
+    /* Keeps it above the shadow */
+    font-size: 40px;
+    /* Adjust size as needed */
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* Flag Styling */
+.flag {
+    position: absolute;
+    /* Absolute positioning to place it on the left side */
+    left: 20px;
+    /* Adjust this value to move the flag left/right */
+    top: 50%;
+    /* Centers the flag vertically relative to the header */
+    transform: translateY(-50%);
+    /* Ensures the flag is perfectly centered vertically */
+    width: 160px;
+    /* Adjust size as needed */
+    height: auto;
+}
+
+/* logo Styling */
+.logo {
+    position: absolute;
+    /* Absolute positioning to place it on the rigt side */
+    right: 20px;
+    /* Adjust this value to move the logo left/right */
+    top: 50%;
+    /* Centers the logo vertically relative to the header */
+    transform: translateY(-50%);
+    /* Ensures the logo is perfectly centered vertically */
+    width: 160px;
+    /* Adjust size as needed */
+    height: auto;
+
+    /* Bouncing animation */
+    animation: bounce 1s infinite;
+    /* Apply the bounce animation */
+}
+
+/* Keyframes for Bouncing Effect */
+@keyframes bounce {
+    0% {
+        transform: translateY(-50%) translateY(0);
+        /* Start position */
+    }
+
+    50% {
+        transform: translateY(-50%) translateY(-10px);
+        /* Move up slightly */
+    }
+
+    100% {
+        transform: translateY(-50%) translateY(0);
+        /* Return to the start position */
+    }
+}
+
+
+
+
+
+/* Intro Section */
+#intro {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#intro h2 {
+    color: #1a5fb8;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#intro p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.8;
+}
+
+/* Animated Button */
+.button-container {
+    margin-top: 30px;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(45deg, #333333, #333333);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+/* Hover Effect */
+.explore-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0073bb, #0073bb);
+    box-shadow: 0px 8px 20px rgba(255, 87, 34, 0.4);
+}
+
+/* Animated Floating Effect */
+.explore-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgb(49, 240, 240);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.explore-button:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #intro {
+        padding: 20px;
+    }
+
+    .explore-button {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+
+
+
+
+/* Gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Centering the gallery section */
+.gallery-container {
+    text-align: center;
+}
+
+.gallery-container h2 {
+    margin-bottom: 15px;
+}
+
+
+
+
+footer {
+    background-color: #414141;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #ffcc00;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #fff;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+}

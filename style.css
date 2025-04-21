@@ -1,0 +1,223 @@
+/* Default styling for desktop */
+#map-frame {
+    height: 580px;
+    width: 950px;
+    background-color: gray;
+    border: 8px solid black;
+    margin-left: 5px;
+}
+
+/* For tablets (screens up to 1024px) */
+@media screen and (max-width: 1024px) {
+    #map-frame {
+        height: 400px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* For smartphones (screens up to 768px) */
+@media screen and (max-width: 768px) {
+    #map-frame {
+        height: 300px;
+        width: 95%;
+        border: 5px solid black;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/* Custom styling for info windows */
+.info-window {
+    max-width: 200px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.info-window h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #d35400;
+}
+
+.info-window img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.info-window p {
+    font-size: 14px;
+    color: #2c3e50;
+    margin: 5px 0;
+}
+
+.info-window a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.info-window a:hover {
+    background-color: #1c5985;
+}
+
+
+
+
+
+
+
+/* Flexbox Container to Center Filters */
+#filters-container {
+    display: flex;
+    justify-content: center;
+    /* Centering filters horizontally */
+    align-items: center;
+    /* Align items in the middle */
+    gap: 20px;
+    /* Space between the two filters */
+    margin: 30px auto;
+    /* Adds spacing from other elements */
+}
+
+/* Ensuring Filters Stay Stylish */
+.filter-box {
+    text-align: center;
+}
+
+/* Keeping the Same Style for Both Filters */
+#category-filter,
+#province-filter {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #050505;
+    /* Black border */
+    border-radius: 8px;
+    /* Rounded edges */
+    background: white;
+    /* White background */
+    color: #333;
+    /* Dark text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect: Turns Dark on Hover */
+#category-filter:hover,
+#province-filter:hover {
+    background: #404040;
+    /* Dark background on hover */
+    color: white;
+    /* White text on hover */
+}
+
+
+
+
+
+
+
+
+#rating-container {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+
+#route-controls {
+    margin: 20px;
+}
+
+
+.star-rating {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+    transition: color 0.3s;
+}
+
+.star.active {
+    color: gold;
+}
+
+
+
+
+#route-controls {
+    font-size: 15px;
+    /* Set the default font size for all elements in this div */
+}
+
+#route-controls label,
+#route-controls select,
+#route-controls button,
+#route-controls p,
+#route-controls div {
+    font-size: 14px;
+    /* Set the font size for each element */
+}
+
+
+
+
+
+.home-icon-button {
+    position: absolute;
+    top: 20px;
+    /* Adjust as needed */
+    left: 20px;
+    z-index: 1000;
+    /* Ensures it stays above other elements */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(135deg, #000203, #000203);
+    /* Gradient Blue */
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.home-icon-button:hover {
+    background: linear-gradient(135deg, #0056b3, #004099);
+    /* Darker Blue on Hover */
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.home-icon-button i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.home-icon-button:hover i {
+    transform: rotate(360deg);
+    /* Smooth spinning effect */
+}
