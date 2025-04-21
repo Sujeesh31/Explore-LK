@@ -8,8 +8,8 @@
 
     .flag,
     .logo {
-        width: 90px;
-        top: 10px;
+        width: 80px;
+        top: 8px;
         transform: none;
     }
 
@@ -25,20 +25,6 @@
     #intro {
         margin: 20px 10px;
         padding: 15px;
-    }
-
-    .explore-button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .gallery img {
-        height: 160px;
     }
 
     footer h2 {
