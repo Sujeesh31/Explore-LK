@@ -122,7 +122,7 @@ function mapframe() {
         {
             position: { lat: 7.874, lng: 80.651 },
             title: "Ibbankatuwa Megalithic Tombs",
-            image: "./images/ibbankatuwa tombs.jpg",
+            image: "./images/Ibbankatuwa tombs.jpg",
             description: "Ibbankatuwa Megalithic Tombs are ancient burial sites in Sri Lanka, dating back to the prehistoric era.",
             wiki: "https://en.wikipedia.org/wiki/Ibbankatuwa_Megalithic_Tombs",
             icon: './images/star.png',
@@ -512,7 +512,7 @@ function mapframe() {
         {
             position: { lat: 6.899, lng: 80.501 },
             title: "Laxapana Falls",
-            image: "./images/laxapana.jpg",
+            image: "./images/laxapana.JPG",
             description: "Laxapana Falls is a majestic 126m-high waterfall in Sri Lanka, known for its scenic beauty and hydroelectric significance.",
             wiki: "https://en.wikipedia.org/wiki/Laxapana_Falls",
             icon: './images/waterfalls.png',
@@ -552,7 +552,7 @@ function mapframe() {
         {
             position: { lat: 6.94751, lng: 80.83117 },
             title: "Bomburu Ella Waterfall",
-            image: "./images/bomburu.jpg",
+            image: "./images/bomburu.JPG",
             description: "Bomburu Ella Waterfall is a scenic waterfall near Nuwara Eliya, Sri Lanka, known for its lush surroundings and serene beauty.",
             wiki: "https://uk.lakpura.com/pages/bomburu-ella-waterfall",
             icon: './images/waterfalls.png',
@@ -694,7 +694,7 @@ function mapframe() {
         {
             position: { lat: 6.80553, lng: 80.84156 },
             title: "Devil’s Staircase",
-            image: "./images/devil staircase.jpg",
+            image: "./images/devil staircase.JPG",
             description: "Devil’s Staircase is a thrilling off-road trail in Sri Lanka, known for its steep slopes, hairpin bends, and breathtaking mountain views.",
             wiki: "https://uk.lakpura.com/pages/devil-s-staircase?srsltid=AfmBOorJwbwxQJV0nuTgx0PtmSVzeOnoDfRgjfR8ZrrCKeT3m-i-edtL&shpxid=c3da5795-4f41-48df-bf2f-74138851aa38",
             icon: './images/mountain.png',
